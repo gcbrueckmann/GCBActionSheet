@@ -33,13 +33,25 @@
 
 - (id)init {
 	if ((self = [super init])) {
-		_buttonHandlers = [[NSMutableArray alloc] init];
+		[self commonInit];
 	}
 	return self;
 }
 
 - (id)initWithTitle:(NSString *)title delegate:(id<UIActionSheetDelegate>)delegate {
-	return [self initWithTitle:title delegate:delegate cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
+	if ((self = [super initWithTitle:title
+	                        delegate:delegate
+	               cancelButtonTitle:nil
+	          destructiveButtonTitle:nil
+	               otherButtonTitles:nil])) {
+		[self commonInit];
+	}
+	return self;
+}
+
+- (void)commonInit
+{
+	_buttonHandlers = [[NSMutableArray alloc] init];
 }
 
 #if !__has_feature(objc_arc)
