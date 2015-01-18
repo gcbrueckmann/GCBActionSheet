@@ -1,9 +1,12 @@
 # GCBActionSheet
 
-Version 1.0 – 2013-06-16
+Version 1.0.1 – 2015-01-18
 
 by Georg C. Brückmann  
 <http://gcbrueckmann.de>
+
+and Brad Taylor
+<http://brad.getcoded.net>
 
 
 ## Introduction
@@ -23,7 +26,7 @@ A subclass of `UIActionSheet` that lets you attach blocks to its buttons.
 
 ## License
 
-Copyright (c) 2013 Georg C. Brückmann (http://gcbrueckmann.de/)
+Copyright (c) 2013-2015 Georg C. Brückmann (http://gcbrueckmann.de/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
